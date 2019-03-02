@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import { PieChart, Pie, Legend } from 'recharts';
+import { PieChart, Pie, Legend, ResponsiveContainer } from 'recharts';
 
-const data01 = [
-    { name: 'France', value: 400 }, { name: 'Espagne', value: 300 },
+const data = [
+    { name: 'France', value: 90 }, { name: 'Espagne', value: 10 },
 ];
 
-export default class Example extends Component {
+export default class PiesComponents extends Component {
 
     render() {
         return (
-            <PieChart width={400} height={400}>
-                <Pie data={data01} dataKey="value" cx={200} cy={200} fill="#8884d8" />
-                <Legend/>
-            </PieChart>
+            <ResponsiveContainer height={300} width="100%">
+                <PieChart >
+                    <Pie data={data} dataKey="value" cx="50%" cy="50%" fill="#8884d8" />
+                    <Legend />
+                </PieChart>
+            </ResponsiveContainer>
         );
     }
 }
