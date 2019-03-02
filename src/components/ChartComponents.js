@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import './ChartComponents.css';
 
 
 const series =
@@ -31,25 +32,26 @@ export default class ChartComponents extends Component {
         return (
 
             series.map(s => (
-                <ResponsiveContainer height={400}>
-                    <LineChart
-                        height={200}
-                        data={s.data}
-                        key={s.serie}
-                        margin={{
-                            top: 5, right: 30, left: 20, bottom: 5,
-                        }}
-                    >
+                <div className="back">
+                    <ResponsiveContainer height={400}>
+                        <LineChart
+                            data={s.data}
+                            key={s.serie}
+                            margin={{
+                                top: 5, right: 30, left: 20, bottom: 5,
+                            }}
+                        >
 
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="France" stroke="#8884d8" activeDot={{ r: 8 }} />
-                        <Line type="monotone" dataKey="Espagne" stroke="#82ca9d" />
-                    </LineChart>
-                </ResponsiveContainer>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="France" stroke="#8884d8" activeDot={{ r: 8 }} />
+                            <Line type="monotone" dataKey="Espagne" stroke="#82ca9d" />
+                        </LineChart>
+                    </ResponsiveContainer>
+                </div>
             ))
         );
     }

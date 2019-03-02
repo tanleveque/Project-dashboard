@@ -9,7 +9,7 @@ export default class PiesComponents extends Component {
 
     render() {
         return (
-            <ResponsiveContainer height={300} width="100%">
+            <ResponsiveContainer height={300} width="100%" class >
                 <PieChart >
                     <Pie data={data} dataKey="value" cx="50%" cy="50%" fill="#8884d8" />
                     <Legend />
