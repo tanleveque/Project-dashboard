@@ -33,6 +33,7 @@ export default class CircularBarGrid extends Component {
                         </CardBody>
                     </Card>
                 </Col>
+                
                 <Col lg="3">
                     <Card>
                     <CardHeader>Women</CardHeader>

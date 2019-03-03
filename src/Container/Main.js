@@ -13,8 +13,8 @@ export default class Main extends Component {
                 <CircularBarGrid />
 
                 <Row>
-                    <Col lg="6"> <ChartComponents /> </Col>
-                    <Col lg="6"> <PiesComponents /> </Col>
+                    <Col lg="8"> <ChartComponents /> </Col>
+                    <Col lg="4"> <PiesComponents /> </Col>
                 </Row>
             </div>
         );

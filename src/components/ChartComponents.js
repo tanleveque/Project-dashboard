@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Card, CardBody, } from 'reactstrap';
+import { Card, CardBody } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 
 import './ChartComponents.css';
@@ -32,35 +33,38 @@ const series =
 export default class ChartComponents extends Component {
     render() {
         return (
+            <div className="back">
+                <Row>
+                    {series.map(s => (
+                        <Col lg="6" >
+                        <Card>
+                            <CardBody>
+                                <ResponsiveContainer height={400}>
 
-            series.map(s => (
-                <div className="back">
-                    <Card>
-                        <CardBody>
-                            <ResponsiveContainer height={400}>
+                                    <LineChart
+                                        data={s.data}
+                                        key={s.serie}
+                                        margin={{
+                                            top: 5, right: 30, left: 20, bottom: 5,
+                                        }}
+                                    >
 
-                                <LineChart
-                                    data={s.data}
-                                    key={s.serie}
-                                    margin={{
-                                        top: 5, right: 30, left: 20, bottom: 5,
-                                    }}
-                                >
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <XAxis dataKey="name" />
+                                        <YAxis />
+                                        <Tooltip />
+                                        <Legend />
+                                        <Line type="monotone" dataKey="France" stroke="#8884d8" activeDot={{ r: 8 }} />
+                                        <Line type="monotone" dataKey="Espagne" stroke="#82ca9d" />
+                                    </LineChart>
+                                </ResponsiveContainer>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                    ))}
+                </Row>
+            </div >
 
-                                    <CartesianGrid strokeDasharray="3 3" />
-                                    <XAxis dataKey="name" />
-                                    <YAxis />
-                                    <Tooltip />
-                                    <Legend />
-                                    <Line type="monotone" dataKey="France" stroke="#8884d8" activeDot={{ r: 8 }} />
-                                    <Line type="monotone" dataKey="Espagne" stroke="#82ca9d" />
-                                </LineChart>
-                            </ResponsiveContainer>
-                        </CardBody>
-                    </Card>
-
-                </div >
-            ))
         );
     }
 }
