@@ -14,7 +14,7 @@ export default class PiesComponents extends Component {
             <div>
                 <Card>
                     <CardBody>
-                        <ResponsiveContainer height={300} width="100%" class >
+                        <ResponsiveContainer height={400} width="100%" class >
                             <PieChart >
                                 <Pie data={data} dataKey="value" cx="50%" cy="50%" fill="#8884d8" />
                                 <Legend />

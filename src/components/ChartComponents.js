@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Card,  CardBody,} from 'reactstrap';
+import { Card, CardBody, } from 'reactstrap';
+
 
 import './ChartComponents.css';
-
-
 
 const series =
     [
@@ -35,10 +34,11 @@ export default class ChartComponents extends Component {
         return (
 
             series.map(s => (
-                <Card>
-                    <CardBody>
-                        <div className="back">
+                <div className="back">
+                    <Card>
+                        <CardBody>
                             <ResponsiveContainer height={400}>
+
                                 <LineChart
                                     data={s.data}
                                     key={s.serie}
@@ -56,10 +56,10 @@ export default class ChartComponents extends Component {
                                     <Line type="monotone" dataKey="Espagne" stroke="#82ca9d" />
                                 </LineChart>
                             </ResponsiveContainer>
-                        </div>
-                    </CardBody>
-                </Card>
+                        </CardBody>
+                    </Card>
 
+                </div >
             ))
         );
     }
