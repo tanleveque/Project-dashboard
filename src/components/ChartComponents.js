@@ -7,18 +7,6 @@ import './ChartComponents.css';
 const series =
     [
         {
-            serie: "Nombre d'étoiles",
-            data: [
-                { name: '1980', France: 0, Belgique: 0, amt: 2400 },
-                { name: '1990', France: 0, Belgique: 0, amt: 2400 },
-                { name: '1998', France: 1, Belgique: 0, amt: 2400 },
-                { name: '2000', France: 1, Belgique: 0, amt: 2400 },
-                { name: '2010', France: 1, Belgique: 0, amt: 2400 },
-                { name: '2018', France: 2, Belgique: 0, amt: 2400 },
-                { name: '2020', France: 2, Belgique: 0, amt: 2400 },
-            ]
-        },
-        {
             serie: "Niveau de seum",
             data: [
                 { name: '1980', France: 0, Belgique: 0, amt: 2400 },
@@ -30,6 +18,20 @@ const series =
                 { name: '2020', France: 0, Belgique: 1000, amt: 2400 },
             ]
         },
+
+        {
+            serie: "Nombre d'étoiles",
+            data: [
+                { name: '1980', France: 0, Belgique: 0, amt: 2400 },
+                { name: '1990', France: 0, Belgique: 0, amt: 2400 },
+                { name: '1998', France: 1, Belgique: 0, amt: 2400 },
+                { name: '2000', France: 1, Belgique: 0, amt: 2400 },
+                { name: '2010', France: 1, Belgique: 0, amt: 2400 },
+                { name: '2018', France: 2, Belgique: 0, amt: 2400 },
+                { name: '2020', France: 2, Belgique: 0, amt: 2400 },
+            ]
+        },
+        
     ];
 
 export default class ChartComponents extends Component {

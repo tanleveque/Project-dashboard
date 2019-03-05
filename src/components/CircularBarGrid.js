@@ -1,39 +1,39 @@
 import React, { Component } from 'react';
 import CircularProgressbar from 'react-circular-progressbar';
-import { Card, CardBody, CardHeader } from 'reactstrap';
-import { Row, Col } from 'reactstrap';
+import { Card, CardBody, CardHeader,Row, Col} from 'reactstrap';
 import 'react-circular-progressbar/dist/styles.css';
 
 const CardProms =
     [
-        {
-            title: "Men",
-            percentage: 90,
-            strokeWidth: 12,
-            strokeColor: '#8884D8',
-            textColor: '#8884D8',
-        },
-        {
-            title: "Women",
-            percentage: 33,
-            strokeWidth: 12,
-            strokeColor: '#F5D7CD',
-            textColor: '#F5D7CD',
-        },
-        {
-            title: "Victory",
-            percentage: 15,
+                {
+            title: "% Précision des passes France",
+            percentage: 83,
             strokeWidth: 12,
             strokeColor: '#6495A3',
             textColor: '#6495A3',
         },
         {
-            title: "Defeat",
-            percentage: 66,
+            title: "% Précision des passes Belgique",
+            percentage: 91,
             strokeWidth: 12,
             strokeColor: '#AFCDCB',
             textColor: '#AFCDCB',
         },
+        {
+            title: "% Justesse passe France",
+            percentage: 86,
+            strokeWidth: 12,
+            strokeColor: '#6495A3',
+            textColor: '#6495A3',
+        },
+        {
+            title: "% Justesse passe Belgique",
+            percentage: 90,
+            strokeWidth: 12,
+            strokeColor: '#AFCDCB',
+            textColor: '#AFCDCB',
+        },
+
         
     ]
 
