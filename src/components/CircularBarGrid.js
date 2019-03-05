@@ -1,107 +1,73 @@
 import React, { Component } from 'react';
 import CircularProgressbar from 'react-circular-progressbar';
-import { Card, CardBody, CardHeader} from 'reactstrap';
+import { Card, CardBody, CardHeader } from 'reactstrap';
 import { Row, Col } from 'reactstrap';
 import 'react-circular-progressbar/dist/styles.css';
 
-
+const CardProms =
+    [
+        {
+            title: "Men",
+            percentage: 90,
+            strokeWidth: 12,
+            strokeColor: '#8884D8',
+            textColor: '#8884D8',
+        },
+        {
+            title: "Women",
+            percentage: 33,
+            strokeWidth: 12,
+            strokeColor: '#F5D7CD',
+            textColor: '#F5D7CD',
+        },
+        {
+            title: "Victory",
+            percentage: 15,
+            strokeWidth: 12,
+            strokeColor: '#6495A3',
+            textColor: '#6495A3',
+        },
+        {
+            title: "Defeat",
+            percentage: 66,
+            strokeWidth: 12,
+            strokeColor: '#AFCDCB',
+            textColor: '#AFCDCB',
+        },
+        
+    ]
 
 export default class CircularBarGrid extends Component {
     render() {
         return (
-
             <Row>
-                <Col lg="3">
-                    <Card>
-                    <CardHeader> Men </CardHeader>
-                        <CardBody>
-                            <CircularProgressbar
-                                percentage={90}
-                                text={`${90}%`}
-                                strokeWidth={12}
-                                styles={{
-                                    path: {
-                                        stroke: '#8884D8',
-                                    },
 
-                                    text: {
-                                        // Tweak text color:
-                                        fill: '#8884D8',
-                                    }
-                                }}
-                            />
-                        </CardBody>
-                    </Card>
-                </Col>
-                
-                <Col lg="3">
-                    <Card>
-                    <CardHeader>Women</CardHeader>
-                        <CardBody>
-                            <CircularProgressbar
-                                percentage={33}
-                                text={`${33}%`}
-                                strokeWidth={12}
-                                styles={{
-                                    path: {
-                                        stroke: '#F5D7CD',
-                                    },
+                {CardProms.map(s => (
+                    <Col lg="3">
+                        <Card>
+                            <CardHeader> {s.title} </CardHeader>
+                            <CardBody>
+                                <CircularProgressbar
+                                    percentage={s.percentage}
+                                    text={`${s.percentage}%`}
+                                    strokeWidth={s.strokeWidth}
+                                    styles={{
+                                        path: {
+                                            stroke: s.strokeColor,
+                                        },
 
-                                    text: {
-                                        // Tweak text color:
-                                        fill: '#F5D7CD',
-                                    }
-                                }}
-                            />
-                        </CardBody>
-                    </Card>
-                </Col>
+                                        text: {
+                                            // Tweak text color:
+                                            fill: s.textColor,
+                                        }
+                                    }}
+                                />
+                            </CardBody>
+                        </Card>
+                    </Col>
+                ))
+                }
 
-                <Col lg="3">
-                    <Card>
-                    <CardHeader>Victory</CardHeader>
-                        <CardBody>
-                            <CircularProgressbar
-                                percentage={15}
-                                text={`${15}%`}
-                                strokeWidth={12}
-                                styles={{
-                                    path: {
-                                        stroke: '#6495A3',
-                                    },
-
-                                    text: {
-                                        // Tweak text color:
-                                        fill: '#6495A3',
-                                    }
-                                }}
-                            />
-                        </CardBody>
-                    </Card>
-                </Col>
-
-                <Col lg="3">
-                    <Card>
-                    <CardHeader>Defeat</CardHeader>
-                        <CardBody>
-                            <CircularProgressbar
-                                percentage={66}
-                                text={`${66}%`}
-                                strokeWidth={12}
-                                styles={{
-                                    path: {
-                                        stroke: '#AFCDCB',
-                                    },
-
-                                    text: {
-                                        // Tweak text color:
-                                        fill: '#AFCDCB',
-                                    }
-                                }}
-                            />
-                        </CardBody>
-                    </Card>
-                </Col>
             </Row>
 
         );
