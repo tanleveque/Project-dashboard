@@ -3,6 +3,7 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Responsi
 import { Card, CardBody, CardHeader,Row, Col} from 'reactstrap';
 
 import './ChartComponents.css';
+import '../Container/Main.css';
 
 const series =
     [
@@ -37,11 +38,11 @@ const series =
 export default class ChartComponents extends Component {
     render() {
         return (
-            <div className="back">
-                <Row>
+            <div className="background">
+                <Row >
                     {series.map(s => (
-                        <Col lg="6" >
-                        <Card>
+                        <Col lg="6">
+                        <Card className="card-box" >
                             <CardHeader> {s.serie }</CardHeader>
                             <CardBody>
                                 <ResponsiveContainer height={400}>

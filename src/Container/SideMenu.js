@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './SideMenu.css';
-import { Row, Col } from 'reactstrap';
 import { Badge } from 'reactstrap';
 
 export default class SideMenu extends Component {
 
     render() {
         return (
-            <body className="side" >
+            <div className="side" >
                 <h1> <Badge color="secondary">Dashboard</Badge> </h1> 
                 <p>Nombres</p>
                 <p>&</p>
@@ -28,7 +27,7 @@ export default class SideMenu extends Component {
                      il a mis sa chaussure droite sur le pied gauche, et l'inverse !" rigole Patrick, 
                      devant le cortège montant vers l'Arc de Triomphe. "One, two, three, viva Umtiti" 
                      prend le dessus dans les rangs, la liesse ne semble pas vouloir s'arrêter.</p>
-            </body>
+            </div>
         );
     }
 }

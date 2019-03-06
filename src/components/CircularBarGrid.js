@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import CircularProgressbar from 'react-circular-progressbar';
 import { Card, CardBody, CardHeader,Row, Col} from 'reactstrap';
+
 import 'react-circular-progressbar/dist/styles.css';
+import '../Container/Main.css';
 
 const CardProms =
     [
@@ -44,7 +46,7 @@ export default class CircularBarGrid extends Component {
 
                 {CardProms.map(s => (
                     <Col lg="3">
-                        <Card>
+                        <Card className="card-box">
                             <CardHeader> {s.title} </CardHeader>
                             <CardBody>
                                 <CircularProgressbar

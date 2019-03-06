@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { PieChart, Pie, Legend, ResponsiveContainer, Cell, } from 'recharts';
 import { Card, CardBody, CardHeader} from 'reactstrap';
+import '../Container/Main.css';
 
 const data = [
     { name: 'France', value: 346 }, 
@@ -15,7 +16,7 @@ export default class PiesComponents extends Component {
         return (
 
             <div>
-                <Card>
+                <Card className="card-box">
                     <CardHeader>% Passes </CardHeader>
                     <CardBody>
                         <ResponsiveContainer height={400} width="100%" class >

@@ -17,9 +17,9 @@ class App extends Component {
 
           <Col lg="10">
             <Header />
-            <main>
+            <div className="bg-app">
               <Main />
-            </main>
+            </div>
           </Col>
         </Row>
       </div>
