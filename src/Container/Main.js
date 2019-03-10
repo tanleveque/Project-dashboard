@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import ChartComponents from "../components/ChartComponents";
-import PiesComponents from "../components/PiesComponents";
-import CircularBarGrid from '../components/CircularBarGrid';
-import ProgressBar from '../components/ProgressBar';
-import NumbersCars from '../components/NumbersCard';
+import LastMeetingBtwTeams from '../components/LastMeetingBtwTeams';
+import Odds from '../components/Odds';
+import LastMeetingOverall from '../components/LastMeetingOverall';
 import { Row, Col } from 'reactstrap';
 import './Main.css';
+
 
 
 export default class Main extends Component {
     render() {
         return (
             <div className="bg-main">
-                <ProgressBar />
-                <NumbersCars/>
-                <CircularBarGrid />
-                <Row>
-                    <Col lg="4"> <PiesComponents /> </Col>
-                    <Col lg="8"> <ChartComponents /> </Col>
-                </Row>
+                <div>
+                    <h3>Comparison PSG - Marseille</h3>
+                </div>
+
+                <Odds />
+
+                <LastMeetingBtwTeams/>
+
+                <LastMeetingOverall/>
             </div>
         );
     }
