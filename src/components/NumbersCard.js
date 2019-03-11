@@ -37,7 +37,7 @@ export default class NumbersCard extends Component {
                     <Col>
                         <Card className="card-box">
 
-                            <CardBody /* style={{ backgroundColor: d.color }} */className="bg-gradient-primary">
+                            <CardBody style={{ backgroundColor: d.color }}>
                                 <Row>
                                     <Col lg="8">
                                         <CardTitle className="text-white">{d.name}</CardTitle>
