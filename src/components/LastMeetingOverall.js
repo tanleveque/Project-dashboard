@@ -69,14 +69,14 @@ export default class LastMeetingOverall extends Component {
                                 </thead>
 
 
-                                <tbody>
+                             {/*    <tbody>
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>{d.Name}</td>
                                         <td>{d.Match}</td>
                                         <td>{d.Match}</td>
                                     </tr>
-                                </tbody>
+                                </tbody> */}
 
                             </Table>
                         </Col>
