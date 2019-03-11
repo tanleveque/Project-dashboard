@@ -68,15 +68,17 @@ export default class LastMeetingOverall extends Component {
                                     </tr>
                                 </thead>
 
-
-                             {/*    <tbody>
+                            
+                                <tbody>
+                                    {d.Match.map(row =>(
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>{d.Name}</td>
-                                        <td>{d.Match}</td>
-                                        <td>{d.Match}</td>
+                                        <td>{row.Name}</td>
+                                        <td>{row.Score}</td>
+                                        <td>{row.Position}</td>
                                     </tr>
-                                </tbody> */}
+                                    ))}
+                                </tbody>
 
                             </Table>
                         </Col>

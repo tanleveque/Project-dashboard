@@ -3,22 +3,23 @@ import { Card, CardBody, CardTitle, CardText, CardHeader, Row, Col } from 'react
 
 import '../Container/Main.css';
 import './NumbersCard.css';
+import './Odds.css';
 
 const data =
     [
         {
             name: "1",
-            color: "#6495A3",
+            color: "#6C757D",
             data: 1.20,
         },
         {
             name: "NUL",
-            color: "#AFCDCB",
+            color: "#343A40",
             data: 6.30,
         },
         {
             name: "2",
-            color: "#AFCDCB",
+            color: "#6C757D",
             data: 10.50,
         },
 
