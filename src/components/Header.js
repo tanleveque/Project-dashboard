@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
-import { Badge } from 'reactstrap';
+import { Row, Col, Badge } from 'reactstrap';
 import './Header.css';
 
 

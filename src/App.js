@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import Main from './Container/Main.js';
 import SideMenu from './Container/SideMenu'
-import Header from './components/Header';
+import Header from './Components/Header';
+import Routes from './routes';
+import { Row, Col} from 'reactstrap';
 import './App.css';
-import { Row, Col } from 'reactstrap';
 
 
 class App extends Component {
   render() {
     return (
       <div>
+      
+        
         <Row>
           <Col lg="2">
             <SideMenu />
@@ -18,10 +20,12 @@ class App extends Component {
           <Col lg="10">
             <Header />
             <div className="bg-app">
-              <Main />
+               <Routes />
             </div>
           </Col>
-        </Row>
+        </Row> 
+        
+        
       </div>
     );
   }

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import LastMeetingBtwTeams from '../components/LastMeetingBtwTeams';
-import Odds from '../components/Odds';
-import LastMeetingOverall from '../components/LastMeetingOverall';
-import { Row, Col } from 'reactstrap';
+import LastMeetingBtwTeams from '../Components/LastMeetingBtwTeams';
+import Odds from '../Components/Odds';
+import LastMeetingOverall from '../Components/LastMeetingOverall';
 import './Main.css';
-
 
 
 export default class Main extends Component {

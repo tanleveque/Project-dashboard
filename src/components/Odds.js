@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardTitle, CardText, CardHeader, Row, Col } from 'reactstrap';
+import { Card, CardBody, CardText, CardHeader, Row, Col } from 'reactstrap';
 
 import '../Container/Main.css';
 import './NumbersCard.css';
