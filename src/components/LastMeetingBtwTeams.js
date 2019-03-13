@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardText, CardHeader, Row, Col } from 'reactstrap';
+import { Card, CardBody, CardText, CardHeader, Row, Col, Collapse, Button } from 'reactstrap';
 
 
 import '../Container/Main.css';
@@ -26,6 +26,17 @@ const datas =
     ]
 
 export default class LastMeetingBtwTeams extends Component {
+
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = { collapse: false };
+    }
+
+    toggle() {
+        this.setState(state => ({ collapse: !state.collapse }));
+    }
+
     render() {
         return (
             <div className="mt-5">
@@ -33,7 +44,7 @@ export default class LastMeetingBtwTeams extends Component {
                 <Row>
                     {datas.map(d => (
                         <Col>
-                            <Card className="card-box">
+                            <Card className="mt-5 mb-5">
                                 <CardHeader className="text-center">{d.Team}</CardHeader>
                                 <CardBody>
                                     <Row>
@@ -64,6 +75,20 @@ export default class LastMeetingBtwTeams extends Component {
 
                                     </Row>
                                 </CardBody>
+
+                                <div className="m-auto">
+                                    <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>More information</Button>
+                                    <Collapse isOpen={this.state.collapse}>
+                                        <Card>
+                                            <CardBody>
+                                                Anim pariatur cliche reprehenderit,
+                                                 enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                                                 anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                                 nesciunt sapiente ea proident.
+                                            </CardBody>
+                                        </Card>
+                                    </Collapse>
+                                </div>
                             </Card>
                         </Col>
                     ))}
