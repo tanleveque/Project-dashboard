@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './SideMenu.css';
 import { Link } from 'react-router-dom';
-import { Badge, Nav, NavItem, NavLink, Card, CardBody, Row } from 'reactstrap';
+import { Badge, Nav, NavItem, NavLink, Card, CardBody } from 'reactstrap';
 
 export default class SideMenu extends Component {
 
     render() {
         return (
-            <div className="bg-dark w-100 shadow-lg pl-3 pr-3 mb-5 rounded" >
+            <div className="bg-dark h-100 shadow-lg pl-3 pr-3 rounded" >
                 <h1> <Badge color="secondary pl-3 pr-3">Dashboard</Badge> </h1>
                 <div className=" mt-5 pl-3 pr-3 text-center text-white">
                     <Nav >

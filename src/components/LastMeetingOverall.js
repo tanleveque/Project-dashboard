@@ -60,8 +60,7 @@ export default class LastMeetingOverall extends Component {
                             <h5>{d.Team}</h5>
                             <Table striped>
                                 <thead>
-                                    <tr>
-                                        <th>#</th>
+                                    <tr>                           
                                         <th>Match</th>
                                         <th>Score</th>
                                         <th>Position</th>
@@ -72,7 +71,6 @@ export default class LastMeetingOverall extends Component {
                                 <tbody>
                                     {d.Match.map(row =>(
                                     <tr>
-                                        <th scope="row">1</th>
                                         <td>{row.Name}</td>
                                         <td>{row.Score}</td>
                                         <td>{row.Position}</td>

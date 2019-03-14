@@ -76,8 +76,8 @@ export default class LastMeetingBtwTeams extends Component {
                                     </Row>
                                 </CardBody>
 
-                                <div className="m-auto">
-                                    <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>More information</Button>
+                                <div >
+                                    <Button color="primary d-block ml-auto mr-auto pl-3 pr-3" onClick={this.toggle} >More information</Button>
                                     <Collapse isOpen={this.state.collapse}>
                                         <Card>
                                             <CardBody>
