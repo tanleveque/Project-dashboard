@@ -42,9 +42,20 @@
 }
 
 body{
-  background: #e4e4e4;
+  background-image: linear-gradient(to right bottom, #dfdfdf, #d5d4e0, #c8c9e1, #babfe3, #a9b5e5);
 }
 
 .bg-app{
   padding: 10px;
+}
+
+.card-header:first-child {
+  border-radius: 1rem;
+  border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+
+.card{
+  border-radius: 1rem;
+  border: 0px solid rgba(0,0,0,.125);
 }

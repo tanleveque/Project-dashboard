@@ -21,7 +21,6 @@ class App extends Component {
           <Col lg="10">
             <Header />
             <div className="bg-app">
-              
               <Routes />
             </div>
           </Col>

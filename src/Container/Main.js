@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import LastMeetingBtwTeams from '../Components/LastMeetingBtwTeams';
-import Odds from '../Components/Odds';
+import LastMeetingBtwTeam from '../Components/LastMeetingBtwTeam';
 import LastMeetingOverall from '../Components/LastMeetingOverall';
+import Odds from '../Components/Odds';
+import Position from '../Components/Position';
 import './Main.css';
 
 
@@ -10,14 +11,12 @@ export default class Main extends Component {
         return (
             <div className="mb-5">
                 <div>
-                    <h3>Comparison PSG - Marseille</h3>
+                    <h1 className="text-white font-weight-bold " >Comparison PSG - Marseille</h1>
                 </div>
-
                 <Odds />
-
-                <LastMeetingBtwTeams/>
-
-                <LastMeetingOverall/>
+                <Position/>
+                <LastMeetingBtwTeam />
+                <LastMeetingOverall />
             </div>
         );
     }

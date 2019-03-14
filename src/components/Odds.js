@@ -2,24 +2,23 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardText, CardHeader, Row, Col } from 'reactstrap';
 
 import '../Container/Main.css';
-import './NumbersCard.css';
 import './Odds.css';
 
 const data =
     [
         {
             name: "1",
-            color: "#6C757D",
+            color: "#1A2B4C",
             data: 1.20,
         },
         {
             name: "NUL",
-            color: "#343A40",
+            color: "#6C757D",
             data: 6.30,
         },
         {
             name: "2",
-            color: "#6C757D",
+            color: "#009DDC",
             data: 10.50,
         },
 
@@ -30,15 +29,15 @@ export default class Odds extends Component {
     render() {
         return (
 
-            <div className="mt-5">
-                <h4 className="text-center"> Odds next meeting </h4>
+            <div className="mt-5 mb-5">
+                <h4 className="text-center text-white font-weight-bold"> Odds next meeting </h4>
                 <Row>
                     {data.map(d => (
                         <Col>
-                            <Card className="card-box">
-                                <CardHeader className="text-center data-text" style={{ backgroundColor: d.color }}>{d.name}</CardHeader>
-                                <CardBody style={{ backgroundColor: d.color }}>
-                                    <CardText className="text-center data-text">{d.data}</CardText>
+                            <Card className=" mt-2 mb-2 text-white" style={{ backgroundColor: d.color }}>
+                                <CardHeader className="text-center " >{d.name}</CardHeader>
+                                <CardBody>
+                                    <CardText className="text-center ">{d.data}</CardText>
                                 </CardBody>
                             </Card>
                         </Col>

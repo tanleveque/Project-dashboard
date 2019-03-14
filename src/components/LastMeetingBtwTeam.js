@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardText, CardHeader, Row, Col, Collapse, Button } from 'reactstrap';
-
+import LastMeetingTabs from '../Components/LastMeetingTabs';
 
 import '../Container/Main.css';
 
@@ -10,8 +10,8 @@ const datas =
 
             Team: "PSG",
             color: "#6495A3",
-            Victory: 4,
-            Draw: 1,
+            Victory: 3,
+            Draw: 0,
             Defeat: 0,
 
         },
@@ -20,8 +20,54 @@ const datas =
             Team: "Marseille",
             color: "#6495A3",
             Victory: 0,
-            Draw: 1,
-            Defeat: 4,
+            Draw: 0,
+            Defeat: 3,
+        },
+    ]
+
+const ResultsBtwTeams =
+    [
+        {
+            id: 0,
+            Team: "PSG",
+            Match: [
+                {
+                    Name: "Olympique Marseille - PSG",
+                    Score: "0 - 2",
+                    Position: "Winner",
+                },
+                {
+                    Name: "PSG - Olympique Marseille",
+                    Score: "3 - 0	",
+                    Position: "Winner",
+                },
+                {
+                    Name: "PSG - Olympique Marseille",
+                    Score: "3 - 0",
+                    Position: "Winner",
+                },
+            ]
+        },
+        {
+            id: 1,
+            Team: "Marseille",
+            Match: [
+                {
+                    Name: "Olympique Marseille - PSG",
+                    Score: "0 - 2",
+                    Position: "Looser",
+                },
+                {
+                    Name: "PSG - Olympique Marseille",
+                    Score: "3 - 0",
+                    Position: "Looser",
+                },
+                {
+                    Name: "PSG - Olympique Marseille",
+                    Score: "3 - 0",
+                    Position: "Looser",
+                },
+            ]
         },
     ]
 
@@ -39,13 +85,13 @@ export default class LastMeetingBtwTeams extends Component {
 
     render() {
         return (
-            <div className="mt-5">
-                <h4 className="text-center">Their last meetings</h4>
+            <div >
+                <h4 className="text-center text-white font-weight-bold">Their last meetings</h4>
                 <Row>
                     {datas.map(d => (
                         <Col>
-                            <Card className="mt-5 mb-5">
-                                <CardHeader className="text-center">{d.Team}</CardHeader>
+                            <Card className="mt-2 mb-2">
+                                <CardHeader className="text-center"><h5>{d.Team}</h5></CardHeader>
                                 <CardBody>
                                     <Row>
 
@@ -75,25 +121,29 @@ export default class LastMeetingBtwTeams extends Component {
 
                                     </Row>
                                 </CardBody>
-
-                                <div >
-                                    <Button color="primary d-block ml-auto mr-auto pl-3 pr-3" onClick={this.toggle} >More information</Button>
-                                    <Collapse isOpen={this.state.collapse}>
-                                        <Card>
-                                            <CardBody>
-                                                Anim pariatur cliche reprehenderit,
-                                                 enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                                                 anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                 nesciunt sapiente ea proident.
-                                            </CardBody>
-                                        </Card>
-                                    </Collapse>
-                                </div>
                             </Card>
                         </Col>
                     ))}
                 </Row>
 
+
+                <div className="mt-4">
+                    <Button color="primary d-block ml-auto mr-auto pl-5 pr-5 shadow " onClick={this.toggle} >More information</Button>
+                    <Collapse isOpen={this.state.collapse}>
+                        <Card>
+                            <CardBody>
+                                <Row>
+                                    {ResultsBtwTeams.map((data, index) => {
+                                        return (
+                                            <Col> <LastMeetingTabs key={index} Results={data} /> </Col>
+                                        )
+                                    })}
+                                </Row>
+                            </CardBody>
+                        </Card>
+                    </Collapse>
+                </div>
+                <hr />
             </div>
         )
     }

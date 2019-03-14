@@ -1,8 +1,5 @@
-/* 
-.side{
-    padding: 10px;
-    text-align: center;
-    color: white;
-    height: 100%;
-    background: #252D3A;
-  } */
+.list-group-item{
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background-color: #ffffff;
+}
