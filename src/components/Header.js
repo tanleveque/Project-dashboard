@@ -8,8 +8,11 @@ export default class Header extends Component {
         return (
             <div className="main">
                 <Row>
-                    <Col lg="3">
+                    <Col lg="1">
                         <h4> <Badge color="secondary">Levêque</Badge> </h4>
+                    </Col>
+                    <Col lg="1">
+                        <h4> <Badge color="secondary">Duthu</Badge> </h4>
                     </Col>
                 </Row>
             </div>

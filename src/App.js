@@ -11,8 +11,6 @@ class App extends Component {
   render() {
     return (
       <div>
-
-
         <Row>
           <Col lg="2">
             <SideMenu />
@@ -21,12 +19,10 @@ class App extends Component {
           <Col lg="10">
             <Header />
             <div className="bg-app">
-              <Routes />
+            <Routes />
             </div>
           </Col>
         </Row>
-
-
       </div>
     );
   }

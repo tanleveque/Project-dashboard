@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SideMenu.css';
 import { Link } from 'react-router-dom';
-import { Badge, Nav, NavItem, NavLink, Card, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
+import { Badge, Nav, NavItem, NavLink, ListGroup, ListGroupItem } from 'reactstrap';
 
 export default class SideMenu extends Component {
 
@@ -33,7 +33,7 @@ export default class SideMenu extends Component {
 
                 <div className="mt-5 text-center text-white">
                     <h2>
-                        Statistics and numbers in order to bet in football
+                        Statistics and numbers in order to bet on football
                     </h2>
                 </div>
             </div>
