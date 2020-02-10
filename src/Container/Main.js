@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import LastMeetingBtwTeam from '../Components/LastMeetingBtwTeam';
-import LastMeetingOverall from '../Components/LastMeetingOverall';
-import Odds from '../Components/Odds';
-import Position from '../Components/Position';
+import LastMeetingBtwTeam from '../components/LastMeetingBtwTeam';
+import LastMeetingOverall from '../components/LastMeetingOverall';
+import Odds from '../components/Odds';
+import Position from '../components/Position';
 import './Main.css';
 
 

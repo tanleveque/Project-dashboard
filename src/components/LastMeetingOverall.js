@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardText, CardHeader, Row, Col, Collapse, Button } from 'reactstrap';
-import LastMeetingTabs from '../Components/LastMeetingTabs';
+import LastMeetingTabs from '../components/LastMeetingTabs';
 
 import '../Container/Main.css';
 

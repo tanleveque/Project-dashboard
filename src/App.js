@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SideMenu from './Container/SideMenu'
-import Header from './Components/Header';
+import Header from './components/Header';
 import Routes from './routes';
 import { Row, Col } from 'reactstrap';
 import './App.css';
