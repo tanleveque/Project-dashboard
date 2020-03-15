@@ -11,8 +11,9 @@ export default class Main extends Component {
         return (
             <div className="mb-5">
                 <div>
-                    <h1 className="text-white font-weight-bold " >Comparison PSG - Marseille</h1>
+                    <h1 className="text-white font-weight-bold " >Comparison between : PSG - OM</h1>
                 </div>
+                <hr />
                 <Odds />
                 <Position/>
                 <LastMeetingBtwTeam />

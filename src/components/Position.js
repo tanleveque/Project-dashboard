@@ -11,7 +11,7 @@ const datas =
             Color: "#1A2B4C",
         },
         {
-            Team: "Marseille",
+            Team: "OM",
             Rank: 4,
             Points: 47,
             Color: "#009DDC",
@@ -23,26 +23,26 @@ const RankingEvol =
         {
             serie: "Ranking Evolution",
             data: [
-                { name: '1', PSG: 2, Marseille: 1},
-                { name: '5', PSG: 1, Marseille: 2},
-                { name: '10', PSG: 1, Marseille: 3},
-                { name: '15', PSG: 1, Marseille: 5},
-                { name: '20', PSG: 1, Marseille: 6},
-                { name: '25', PSG: 1, Marseille: 4 },
-                { name: '30', PSG: 1, Marseille: 4 },
+                { name: '1', PSG: 2, OM: 1},
+                { name: '5', PSG: 1, OM: 2},
+                { name: '10', PSG: 1, OM: 3},
+                { name: '15', PSG: 1, OM: 5},
+                { name: '20', PSG: 1, OM: 6},
+                { name: '25', PSG: 1, OM: 4 },
+                { name: '30', PSG: 1, OM: 4 },
             ]
         },
 
         {
             serie: "Points Evolution",
             data: [
-                { name: '1', PSG: 3, Marseille: 3 },
-                { name: '5', PSG: 15, Marseille: 10},
-                { name: '10', PSG: 30, Marseille: 19 },
-                { name: '15', PSG: 42, Marseille: 25},
-                { name: '20', PSG: 56, Marseille: 30 },
-                { name: '25', PSG: 67, Marseille: 40 },
-                { name: '30', PSG: 75, Marseille: 50 },
+                { name: '1', PSG: 3, OM: 3 },
+                { name: '5', PSG: 15, OM: 10},
+                { name: '10', PSG: 30, OM: 19 },
+                { name: '15', PSG: 42, OM: 25},
+                { name: '20', PSG: 56, OM: 30 },
+                { name: '25', PSG: 67, OM: 40 },
+                { name: '30', PSG: 75, OM: 50 },
             ]
         },
 
@@ -61,7 +61,7 @@ export default class Position extends Component {
     render() {
         return (
             <div className="mt-5 mb-5">
-                <h4 className="text-center text-white font-weight-bold"> Ranking position : ligue 1</h4>
+                <h3 className="text-center text-white font-weight-bold"> Ranking position : ligue 1</h3>
                 <Row>
                     {datas.map(d => (
                         <Col>

@@ -12,7 +12,7 @@ const data =
             data: 1.20,
         },
         {
-            name: "NUL",
+            name: "Draw",
             color: "#6C757D",
             data: 6.30,
         },
@@ -30,7 +30,7 @@ export default class Odds extends Component {
         return (
 
             <div className="mt-5 mb-5">
-                <h4 className="text-center text-white font-weight-bold"> Odds next meeting </h4>
+                <h3 className="text-center text-white font-weight-bold"> Odds next meeting </h3>
                 <Row>
                     {data.map(d => (
                         <Col>

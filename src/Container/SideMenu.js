@@ -7,8 +7,9 @@ export default class SideMenu extends Component {
 
     render() {
         return (
-            <div className="bg-dark h-100 shadow-lg pl-2 pr-2 rounded" >
-                <h1> <Badge color="secondary pl-3 pr-3 mt-3">Dashboard</Badge> </h1>
+            //  <div className="bg-dark h-100 shadow-lg pl-2 pr-2 rounded" >
+             <div className="neumorphic h-100 w-100"> 
+                <h3 className="text-center text-white pt-3 "> Dashboard </h3>
                 <div className=" mt-5 text-center text-white  w-75 d-block ml-auto mr-auto">
                     <ListGroup>
                         <Nav className="pl-1 pr-1">
@@ -31,10 +32,10 @@ export default class SideMenu extends Component {
 
                 </div>
 
-                <div className="mt-5 text-center text-white">
-                    <h2>
+                <div className="mt-5 m-3 text-center text-white">
+                    <h5>
                         Statistics and numbers in order to bet on football
-                    </h2>
+                    </h5>
                 </div>
             </div>
         );

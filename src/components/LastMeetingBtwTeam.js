@@ -17,7 +17,7 @@ const datas =
         },
         {
 
-            Team: "Marseille",
+            Team: "OM",
             color: "#6495A3",
             Victory: 0,
             Draw: 0,
@@ -32,17 +32,17 @@ const ResultsBtwTeams =
             Team: "PSG",
             Match: [
                 {
-                    Name: "Olympique Marseille - PSG",
+                    Name: "Olympique OM - PSG",
                     Score: "0 - 2",
                     Position: "Winner",
                 },
                 {
-                    Name: "PSG - Olympique Marseille",
+                    Name: "PSG - Olympique OM",
                     Score: "3 - 0	",
                     Position: "Winner",
                 },
                 {
-                    Name: "PSG - Olympique Marseille",
+                    Name: "PSG - Olympique OM",
                     Score: "3 - 0",
                     Position: "Winner",
                 },
@@ -50,7 +50,7 @@ const ResultsBtwTeams =
         },
         {
             id: 1,
-            Team: "Marseille",
+            Team: "OM",
             Match: [
                 {
                     Name: "Olympique Marseille - PSG",
@@ -86,7 +86,7 @@ export default class LastMeetingBtwTeams extends Component {
     render() {
         return (
             <div >
-                <h4 className="text-center text-white font-weight-bold">Their last meetings</h4>
+                <h3 className="text-center text-white font-weight-bold">Last meetings</h3>
                 <Row>
                     {datas.map(d => (
                         <Col>

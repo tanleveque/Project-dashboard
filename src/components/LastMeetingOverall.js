@@ -17,7 +17,7 @@ const datas =
         },
         {
 
-            Team: "Marseille",
+            Team: "OM",
             color: "#6495A3",
             Victory: 2,
             Draw: 1,
@@ -48,7 +48,7 @@ const ResultsOverall =
             ]
         },
         {
-            Team: "Marseille",
+            Team: "OM ",
             Match: [
                 {
                     Name: "Olympique Marseille - Saint-Étienne",
@@ -84,7 +84,7 @@ export default class LastMeetingOverall extends Component {
     render() {
         return (
             <div className="mt-5">
-                <h4 className="text-center text-white font-weight-bold">Last Meeting Overall</h4>
+                <h3 className="text-center text-white font-weight-bold">Last Meetings Overall</h3>
                 <Row>
                     {datas.map(d => (
                         <Col>
